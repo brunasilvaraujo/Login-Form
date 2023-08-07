@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@200;300;400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Edu SA Beginner', sans-serif;
 }
 
 section {
@@ -27,7 +27,7 @@ section .bg{
     pointer-events: none;
 }
 
-section .trees{
+section .front{
     position: absolute;
     top: 0;
     left: 0;
@@ -38,26 +38,39 @@ section .trees{
     pointer-events: none;
 }
 
-section .girl{
+section .papaleguas{
     position: absolute;
     scale: 0.65;
     pointer-events: none;
-    animation: animateGirl 10s linear infinite;
+    animation: animatePapaleguas 15s linear infinite;
 }
 
-@keyframes animateGirl{
+
+/* Animação do papaleguas */
+@keyframes animatePapaleguas{
     0%{
-        transform: translateX(calc(100% + 100vw));
+        transform: translateX(calc(100% + 100vw)) scale(0.8);
     }
     50%{
-        transform: translateX(calc(-100% - 100vw));
+        transform: translateX(calc(-100% - 100vw)) scale(0.8);
     }
     50.01%{
-        transform: translateX(calc(-100% - 100vw)) rotateY(180deg);
+        transform: translateX(calc(-100% - 100vw)) scale(0.8) rotateY(180deg);
     }
     100%{
-        transform: translateX(calc(100% + 100vw)) rotateY(180deg);
-    }
+        transform: translateX(calc(100% + 100vw)) scale(0.8) rotateY(180deg);
+    } 
+    /* Era um teste caso fosse um rolo de feno
+     from {
+        transform: translateX(-100vw) scale(0.5);
+      }
+      to {
+        transform: translateX(100vw) scale(0.5);
+         rotate: 1 2 1 180deg;
+      }
+    
+    
+    */
 }
 
 .login{
@@ -81,7 +94,7 @@ section .girl{
     text-align: center;
     font-size: 2.5em;
     font-weight: 600;
-    color: #8f2c24;
+    color: #424022;
     margin-bottom: 10px;
     
 }
@@ -96,7 +109,7 @@ section .girl{
     padding: 15px 20px;
     outline: none;
     font-size: 1.25em;
-    color: #8f2c24;
+    color: #949a5f;
     border-radius: 5px;
     background: #fff;
     border: none;
@@ -104,14 +117,14 @@ section .girl{
 }
 
 .login .inputBox ::placeholder{
-    color: #8f2c24;
+    color: #949a5f;
 }
 
 .login .inputBox #btn{
     position: relative;
     border: none;
     outline: none;
-    background: #8f2c24;
+    background: #949a5f;
     color: #fff;
     cursor: pointer;
     font-size: 1.25em;
@@ -120,7 +133,7 @@ section .girl{
 }
 
 .login .inputBox #btn:hover{
-    background: #d64c42;
+    background: #949a5f;
 }
 
 .login .group{
@@ -128,9 +141,13 @@ section .girl{
     justify-content: space-between;
 }
 
+.login .group .senha{
+    color: rgb(136, 47, 47);
+}
+
 .login .group a{
     font-size: 1.25em;
-    color: #8f2c24;
+    color: #949a5f;
     font-weight: 500;
     text-decoration: none;
 }
@@ -139,7 +156,7 @@ section .girl{
     text-decoration: underline;
 }
 
-.leaves{
+.Tumbleweed{
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -151,7 +168,7 @@ section .girl{
     pointer-events: none;
 }
 
-.leaves .set{
+.Tumbleweed .set{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -160,52 +177,52 @@ section .girl{
     pointer-events: none;
 }
 
-.leaves .set div{
+.Tumbleweed .set div{
     position: absolute;
     display: block;
 }
 
-.leaves .set div:nth-child(1){
+.Tumbleweed .set div:nth-child(1){
     left: 20%;
-    animation: animate 20s linear infinite;
+    animation: TumbleweedAnimate 20s linear infinite;
 }
 
-.leaves .set div:nth-child(2){
+.Tumbleweed .set div:nth-child(2){
     left: 50%;
-    animation: animate 14s linear infinite;
+    animation: TumbleweedAnimate 14s linear infinite;
 }
 
-.leaves .set div:nth-child(3){
+.Tumbleweed .set div:nth-child(3){
     left: 70%;
-    animation: animate 12s linear infinite;
+    animation: TumbleweedAnimate 12s linear infinite;
 }
 
-.leaves .set div:nth-child(4){
+.Tumbleweed .set div:nth-child(4){
     left: 5%;
-    animation: animate 15s linear infinite;
+    animation: TumbleweedAnimate 15s linear infinite;
 }
 
-.leaves .set div:nth-child(5){
+.Tumbleweed .set div:nth-child(5){
     left: 85%;
-    animation: animate 18s linear infinite;
+    animation: TumbleweedAnimate 18s linear infinite;
 }
 
-.leaves .set div:nth-child(6){
+.Tumbleweed .set div:nth-child(6){
     left: 90%;
-    animation: animate 12s linear infinite;
+    animation: TumbleweedAnimate 12s linear infinite;
 }
 
-.leaves .set div:nth-child(7){
+.Tumbleweed .set div:nth-child(7){
     left: 15%;
-    animation: animate 14s linear infinite;
+    animation: TumbleweedAnimate 14s linear infinite;
 }
 
-.leaves .set div:nth-child(8){
+.Tumbleweed .set div:nth-child(8){
     left: 60%;
-    animation: animate 15s linear infinite;
+    animation: TumbleweedAnimate 15s linear infinite;
 }
 
-@keyframes animate {
+@keyframes TumbleweedAnimate {
     0%{
         opacity: 0;
         top: -10%;
@@ -221,13 +238,13 @@ section .girl{
         transform: translateX(-20px) rotate(90deg);
     }
     60%{
-        transform: translateX(20px) rotate(180deg);
+        transform: translateX(20px) rotate(360deg);
     }
     80%{
         transform: translateX(-20px) rotate(45deg);
     }
     100%{
         top: 110%;
-        transform: translateX(20px) rotate(225deg);
+        transform: translateX(20px) rotate(360deg);
     }
 }
