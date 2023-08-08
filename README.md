@@ -1,6 +1,6 @@
 # About
 ## Animação em CSS
-<h1 align="center">
+<h3 align="left">
     <a href="[https://pt-br.reactjs.org/](https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 )"> Documentação</a>
 </h1>
